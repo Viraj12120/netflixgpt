@@ -1,6 +1,6 @@
 # NetflixGPT
- -create-react-app
- -Configured Tailwind
+ create-react-app
+ Configured Tailwind
 
 # Features
  -Login/SignUp
