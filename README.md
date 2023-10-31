@@ -2,18 +2,17 @@
  -create-react-app
  -Configured Tailwind
 
-
- # Features
--Login/SignUp
+# Features
+ -Login/SignUp
       -Sign Up Form/SignIn
       -redirect to Browse Page
-- Browse(after authentication)
+ - Browse(after authentication)
    -Header
    -Main movie
        -Trailer in Background
        -Title aand Description
        -MovieSuggetions
-              -MoviesList * N
-# NetflixGPT
+       -MoviesList * N
+ - NetflixGPT
    -Search Bar
    -Movie Suggestions         
