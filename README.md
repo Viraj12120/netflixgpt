@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # NetflixGPT
 
 -create-react-app
