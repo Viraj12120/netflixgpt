@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # NetflixGPT
  -create-react-app
  -Configured Tailwind
