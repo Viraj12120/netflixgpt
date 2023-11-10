@@ -14,6 +14,9 @@
 -Implement Sign Out
 -Update Profile
 -tmbdb movies browse
+-unsubscribe to onAuthStateChanged callback
+-registered TMDB API & create an app & get access token
+-get data from TMDB now playing movies list API
 
 # firebase
 

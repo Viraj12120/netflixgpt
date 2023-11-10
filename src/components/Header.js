@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
+import { AVATAR, LOGO } from "../utils/constants";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -12,15 +13,13 @@ const Header = () => {
   const user = useSelector((store) => store.user);
   const handleSignOut = () => {
     signOut(auth)
-      .then(() => {
-        navigate("/");
-      })
+      .then(() => {})
       .catch((error) => {
         navigate("/error");
       });
   };
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName, photoURL } = user;
         dispatch(
@@ -38,22 +37,15 @@ const Header = () => {
         navigate("/");
       }
     });
+    return () => unsubscribe();
   }, []);
   return (
     <div className="absolute px-8 py-2 bg-gradient-to-b w-screen justify-between  from-black z-10 flex">
-      <img
-        className="w-44"
-        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
-        alt="logo"
-      />
+      <img className="w-44" src={LOGO} alt="logo" />
 
       {user && (
         <div className="flex p-2">
-          <img
-            className="w-12 h-12 rounded-lg"
-            alt="logos"
-            src="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.webp"
-          />
+          <img className="w-12 h-12 rounded-lg" alt="logos" src={AVATAR} />
           <button
             onClick={handleSignOut}
             className="font-bold text-white p-3 text-center"
