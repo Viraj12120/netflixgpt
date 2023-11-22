@@ -17,6 +17,19 @@
 -unsubscribe to onAuthStateChanged callback
 -registered TMDB API & create an app & get access token
 -get data from TMDB now playing movies list API
+-Custom Hook for Now Playing Movies
+-Create movieSlice
+-update store with Movie data
+-planning for mainContainer and secondaryContainer
+-fetch Data for trailer Video
+-update Store with Trailer Video Data
+-Embedded Youtube Video and make autoplay mute
+-Tailwind css
+-build secondary component
+-movie list
+-movie card
+-TMDB Image CDN
+-Multi Language Feature
 
 # firebase
 

@@ -9,25 +9,25 @@ import useTopRatedMovies from "../hooks/useTopRated";
 import useUpcomingMovies from "../hooks/useUpcomingMovies";
 
 const Browse = () => {
-  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+	const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
 
-  useNowPlayingMovies();
-  usePopularMovies();
-  useTopRatedMovies();
-  useUpcomingMovies();
+	useNowPlayingMovies();
+	usePopularMovies();
+	useTopRatedMovies();
+	useUpcomingMovies();
 
-  return (
-    <div>
-      <Header />
-      {showGptSearch ? (
-        <GPTSearch />
-      ) : (
-        <>
-          <MainContainer />
-          <SecondaryContainer />
-        </>
-      )}
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			{showGptSearch ? (
+				<GPTSearch />
+			) : (
+				<>
+					<MainContainer />
+					<SecondaryContainer />
+				</>
+			)}
+		</div>
+	);
 };
 export default Browse;
