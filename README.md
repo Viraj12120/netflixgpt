@@ -1,35 +1,50 @@
-# NetflixGPT
-
--create-react-app
--Configured Tailwind
--Header
--Login Form
--Sign Up Form
--Form Validation
--UseRef Hook
--Deploying our app to production
--Create SignUp User Account
--Implement SignIn User Api
--create Redux Store with userSlice
--Implement Sign Out
--Update Profile
--tmbdb movies browse
--unsubscribe to onAuthStateChanged callback
--registered TMDB API & create an app & get access token
--get data from TMDB now playing movies list API
--Custom Hook for Now Playing Movies
--Create movieSlice
--update store with Movie data
--planning for mainContainer and secondaryContainer
--fetch Data for trailer Video
--update Store with Trailer Video Data
--Embedded Youtube Video and make autoplay mute
--Tailwind css
--build secondary component
--movie list
--movie card
--TMDB Image CDN
--Multi Language Feature
+Create React App
+Configured TailwindCSS
+Header
+Routing of App
+Login Form
+Sign up Form
+Form Validation
+useRef Hook
+Firebase Setup
+Deploying our app to production
+Create SignUp User Account
+Implement Sign In user Api
+Created Redux Store with userSlice
+Implemented Sign out
+Update Profile
+BugFix: Sign up user displayName and profile picture update
+BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
+Unsubscibed to the onAuthStateChanged callback
+Add hardcoded values to the constants file
+Regiter TMDB API & create an app & get access token
+Get Data from TMDB now playing movies list API
+Custom Hook for Now Playing Movies
+Create movieSlice
+Update Store with movies Data
+Planning for MainContauiner & secondary container
+Fetch Data for Trailer Video
+Update Store with Trailer Video Data
+Embedded the Yotube video and make it autoplay and mute
+Tailwind Classes to make Main Container look awesome
+Build Secondary Component
+Build Movie List
+build Movie Card
+TMDB Image CDN URL
+Made the Browsre page amazing with Tailwind CSS
+usePopularMovies Custom hook
+GPT Search Page
+GPT Search Bar
+(BONUS) Multi-language Feature in our App
+Get Open AI Api Key
+Gpt Search API Call
+fetched gptMoviesSuggestions from TMDB
+created gptSlice added data
+Resused Movie List component to make movie suggestion container
+Memoization
+Added .env file
+Adding .env file to gitignore
+Made our Site Responsive
 
 # firebase
 
@@ -37,7 +52,7 @@
 -Note:Do install ⬇️ in bash terminal
 -firebase CLI => npm install -g firebase-tools
 -firebase login
--create react app =>firebase=>What do you want tousse as your public directory -> build
+-create react app =>firebase=>What do you want to use as your public directory -> build
 -next->no-> no
 -firebase deploy on production <- deployed
 
